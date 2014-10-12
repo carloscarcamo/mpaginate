@@ -15,7 +15,7 @@ This is an open source module that provides an easy way to paginate results. The
 var mongoose = require('mongoose'),
     schema = mongoose.Schema,
     mpaginate = require('mpaginate');
-    
+
 var peopleSchema = new schema({
     name: String,
     email: String,
@@ -29,7 +29,7 @@ var people = mongoose.model('people', peopleSchema);
 mongoose.connect('mongodb://localhost/test', function(err){
     if(err) throw err;
 
-    people.finAndPaginate({age:{'$gt':18}},{'_id':0, name:1, age:1, email:1}, 10, 1, function(err, data){
+    people.findAndPaginate({age:{'$gt':18}},{'_id':0, name:1, age:1, email:1}, 10, 1, function(err, data){
         if(err) console.error(err);
         console.dir(data);
         mongoose.connection.close();
