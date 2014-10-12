@@ -1,16 +1,13 @@
-module.exports = function(query, project, options, limit, pageNum, callback){
+module.exports = function(query, project, limit, pageNum, callback){
     var model = this,
         prevPage = 0,
         nextPage = 0;
-        
+
     if ('object' != typeof query) {
         query = {};
     }
     if ('object' != typeof project) {
         project = {};
-    }
-    if ('object' != typeof options) {
-        options = {};
     }
     if(parseInt(limit)==NaN){
         limit = 0;
@@ -42,7 +39,7 @@ module.exports = function(query, project, options, limit, pageNum, callback){
                     model.count(query, function(err, count){
                         if(err) callback(err);
                         var result = {
-                            fields:data,
+                            docs:data,
                             count:count,
                             prevPage:prevPage,
                             nextPage:nextPage,

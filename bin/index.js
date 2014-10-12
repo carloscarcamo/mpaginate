@@ -1,3 +1,3 @@
-exports.MPaginate = function (schema) {
-    schema.statics.finAndPaginate = require('./MPaginate.js');
+exports.mpaginate = function (schema) {
+    schema.statics.finAndPaginate = require('./mpaginate.js');
 }
