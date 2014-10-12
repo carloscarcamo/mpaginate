@@ -1,4 +1,4 @@
-# MPaginate
+# mpaginate
 
 This is a [Node.js](http://nodejs.org) module to paginate results with [mongoose](https://github.com/learnboost/mongoose) inspired by [mongoose-pages](https://github.com/hacksparrow/mongoose-pages).
 
@@ -35,3 +35,10 @@ mongoose.connect('mongodb://localhost/test', function(err){
         mongoose.connection.close();
     });
 });
+
+
+## License
+
+Copyright (c) 2014 Carlos Eduardo Cárcamo
+
+Licensed under GPLv2.
