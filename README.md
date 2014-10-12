@@ -35,7 +35,7 @@ mongoose.connect('mongodb://localhost/test', function(err){
         mongoose.connection.close();
     });
 });
-
+```
 
 ## License
 
