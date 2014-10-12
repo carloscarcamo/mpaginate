@@ -1,0 +1,30 @@
+{
+  "name": "mpaginate",
+  "version": "0.0.1",
+  "description": "Easy pagination with Mongoose",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carloscarcamo/mpaginate.git"
+  },
+  "keywords": [
+    "paginate",
+    "pagination",
+    "mongoose",
+    "mpaginate",
+    "mongodb",
+    "node.js"
+  ],
+  "author": "Carlos Cárcamo",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/carloscarcamo/mpaginate/issues"
+  },
+  "homepage": "https://github.com/carloscarcamo/mpaginate",
+  "devDependencies": {
+    "mongoose": "^3.8.17"
+  }
+}
