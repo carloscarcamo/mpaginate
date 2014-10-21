@@ -1,5 +1,6 @@
 mpaginate
 =========
+[![devDependency Status](https://david-dm.org/carloscarcamo/mpaginate/dev-status.svg)](https://david-dm.org/carloscarcamo/mpaginate#info=devDependencies)
 
 This is a [Node.js](http://nodejs.org) module to paginate results with [mongoose](https://github.com/learnboost/mongoose) inspired by [mongoose-pages](https://github.com/hacksparrow/mongoose-pages).
 
