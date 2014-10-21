@@ -5,6 +5,8 @@ mpaginate
 
 This is a [Node.js](http://nodejs.org) module to paginate results with [mongoose](https://github.com/learnboost/mongoose) inspired by [mongoose-pages](https://github.com/hacksparrow/mongoose-pages).
 
+[![NPM](https://nodei.co/npm/mpaginate.png?compact=true)](https://nodei.co/npm/mpaginate/)
+
 ## Purpose ##
 
 This is an open source module that provides an easy way to paginate results. The main purpose is extend mongoose providing it with functionality to paginate results.
