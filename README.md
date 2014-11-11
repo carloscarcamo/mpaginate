@@ -69,17 +69,24 @@ yourModel.findAndPaginate(query, project, limit, pageNum, callback);
 ```
 
 #### You need to pass five parameters to findAndPaginate method:
-* query     ->  type Object: Your mongodb query ({a:1, b:{'$gt':1}}).
-* project   ->  type Object: Your projection ({_id:0, a:1}).
-* limit     ->  type Number: An integer value for the max number per pages, default 0.
-* pageNum   ->  type Number: Number of page, default 1.
-* callback  ->  type Function: A callback function. The callback receives two parameters, err and data.
-
+```javascript
+/** 
+ * @param {Object} query  Your mongodb query ({a:1, b:{'$gt':1}})
+ * @param {Object} project Your projection ({_id:0, a:1})
+ * @param {number} limit An integer value for the max number per pages, default 0
+ * @param {number} pageNum Number of page, default 1
+ * @param {function} callback A callback function. The callback receives two parameters, err and data.
+ */
+```
 #### The callback function receives two parameters as follows:
-* err       -> instance of Error.
-* data      -> a JSON object {}.
- 
+```javascript
+/** 
+ * @param {Object} err Instance of Error.
+ * @param {Object} data A JSON object {}.
+ */
+``` 
 #### The data object returned is as follows:
+Note: a JSON object is returned.
 * data.docs: The documents.
 * data.count: Total number of documents in collection.
 * data.prevPage: The number of the previous page.
